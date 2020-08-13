@@ -1,0 +1,471 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Youtube page</title>
+  </head>
+  <body>
+    <!--The Nav Bar-->
+    <div id="navbar">
+      <div id="box1">
+        <a href="#" class="list-icon"
+          ><img src="images/icon-list.png" alt="#"
+        /></a>
+
+        <a href="#" class="logo-icon"
+          ><img src="images/logo-youtube.png" alt="#"
+        /></a>
+      </div>
+      <div id="box2">
+        <input type="text" placeholder="Search" class="searchbar" />
+
+        <a href="#" class="loop-icon"><img src="images/loop.png" alt="#" /></a>
+      </div>
+      <div id="box3">
+        <a href="#" class="upload-icon"
+          ><img src="images/upload-icon.png" alt="#"
+        /></a>
+        <button type="button" class="signbutton">Sign In</button>
+      </div>
+    </div>
+    <!--language bar-->
+    <div id="langbar">
+      <div id="choose">
+        <p>
+          <img src="images/chooseicon.jpg" />
+          Choose your language.
+        </p>
+      </div>
+      <div><p>X</p></div>
+    </div>
+    <!--Prefered language-->
+    <div id="preflang">
+      <div id="viewYt">
+        <p>
+          You're viewing YouTube in English (US). You can
+          <a href="#"> change this preference below.</a>
+        </p>
+      </div>
+      <div id="lmlang">
+        <p><a href="#">Learn More</a></p>
+      </div>
+    </div>
+
+    <!--container-->
+    <div id="container">
+      <div id="col1">
+        <div id="section-1">
+          <iframe
+            width="100%"
+            height="400px"
+            src="https://www.youtube.com/embed/V74l_zS1x8E"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!--section 2-->
+        <div id="section-2">
+          <div id="title">
+            <span>Contributing to Open Source Part I: The Easy Way</span>
+          </div>
+          <div id="subscribe">
+            <div id="channellogo"><img src="/images/t-logo.jpg" /></div>
+            <div id="channelname"><span>The Odin Project</span></div>
+            <div id="subbtn-container">
+              <img src="images/subbutton.png" alt="#" />
+            </div>
+            <div id="nbrofsub"><span>455</span></div>
+          </div>
+          <div id="nbrviews">
+            5,016 Views
+          </div>
+          <div id="sharebtns">
+            <div id="addto"><img src="images/plus-icon.png" />Add to</div>
+            <div id="share"><img src="images/share-icon.png" />Share</div>
+            <div id="more"><img src="images/more-icon.png" />More</div>
+          </div>
+          <div id="likebtns">
+            <div id="like"><img src="images/betterlike.png" />351</div>
+            <div id="dislike"><img src="images/betterdislike.png" />1</div>
+          </div>
+        </div>
+
+        <!--description-->
+        <div id="description">
+          <h3>Published on Feb 27, 2014</h3>
+          <p>
+            How do you contribute to open source? In this video, I'll describe
+            the easiest way to make a simple contribution to an open source
+            project -- without using the command line, a text editor, "forking a
+            repo", or even touching Git outside of Github. I'll also describe
+            what kinds of contributions open source software projects are
+            typically looking for. As an example, I use submitting a student
+            solution to a web development exercise from The Odin Project, a free
+            online curriculum for learning web development with Ruby on Rails.
+            You can find more information about that project at
+            http://theodinproject.com.
+          </p>
+        </div>
+        <!--show button -->
+        <div>
+          <button id="showbtn" type="button">SHOW MORE</button>
+        </div>
+        <!--Comments section -->
+        <div id="comments">
+          <img src="images/loading.gif" />
+          <span>Loading...</span>
+        </div>
+      </div>
+      <!--end column 1-->
+<!--column 2-->
+      <div id="col2">
+        <div class="opt">
+          <span id="left-side">Up next</span>
+          <div id="right-side">
+            <span id="tag-1">Autoplay</span>
+            <span id="tag-2"><img src="/images/i-icon.png" alt="#" /></span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="vid-container" id="vid-1">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-1.jfif" alt="#" />
+            <span class="vid-duration">14:25</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              Contributing to Open Source Part II: The Real Way
+            </span>
+            <span class="vid-details">The Odin Project</span>
+            <span class="vid-details">29,985 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-2.jfif" alt="#" />
+            <span class="vid-duration">42:35</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              'How to Get a Job at the Big 4 - Amazon, Facebook, Google &
+              Microsoft' by
+            </span>
+            <span class="vid-details">imtiana</span>
+            <span class="vid-details">981,543 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-3.jfif" alt="#" />
+            <span class="vid-duration">19:11</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              Programming in Visual Basic .Net How to Connect Access Database to
+            </span>
+            <span class="vid-details">iBasskung</span>
+            <span class="vid-details">16,130,993 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-4.jfif" alt="#" />
+            <span class="vid-duration">8:53</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              REST API concepts and examples
+            </span>
+            <span class="vid-details">WebConcepts</span>
+            <span class="vid-details">3,580,484 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-5.jfif" alt="#" />
+            <span class="vid-duration">17:41</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              GitHub - Why Microsoft Paid $7.5B for the Future of Software! - A
+              Case
+            </span>
+            <span class="vid-details">Valuetainment</span>
+            <span class="vid-details">444,634 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-6.jfif" alt="#" />
+            <span class="vid-duration">20:32</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              How to create a 3D Terrain with Google Maps and height maps in
+              Photoshop
+            </span>
+            <span class="vid-details">Orange Box Ceo</span>
+            <span class="vid-details">6,269,391 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-7.jfif" alt="#" />
+            <span class="vid-duration">8:37</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              Convolutional Neural Networks (CNNs) explained
+            </span>
+            <span class="vid-details">deeplizard</span>
+            <span class="vid-details">239,752 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-8.jfif" alt="#" />
+            <span class="vid-duration">16:04</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              Top 10 Linux Job Interview Questions
+            </span>
+            <span class="vid-details">tutoriaLinux</span>
+            <span class="vid-details">1,236,003 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-9.jfif" alt="#" />
+            <span class="vid-duration">17:11</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              Running an SQL Injection Attack - Computerphile
+            </span>
+            <span class="vid-details">Computerphile</span>
+            <span class="vid-details">2,217,477 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-10.jfif" alt="#" />
+            <span class="vid-duration">26:01</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              How to prepare for product based companies??
+            </span>
+            <span class="vid-details">Gate Lectures by Ravindrababu Rav</span>
+            <span class="vid-details">291,215 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-11.jfif" alt="#" />
+            <span class="vid-duration">25:01</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              Visual Basic .Net : Search in Access Database - DataGridView
+            </span>
+            <span class="vid-details">iBasskung</span>
+            <span class="vid-details">6,047,577 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-12.jfif" alt="#" />
+            <span class="vid-duration">9:04</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              How To Convert pdf to word without software
+            </span>
+            <span class="vid-details">karim hamdadi</span>
+            <span class="vid-details">12,275,519 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-13.jfif" alt="#" />
+            <span class="vid-duration">12:19</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              What Python Projects Should I Build to Get a Job?
+            </span>
+            <span class="vid-details">Real Python</span>
+            <span class="vid-details">169,155 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-14.jfif" alt="#" />
+            <span class="vid-duration">8:19</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              How To NOT Look Like A Tourist | What To Wear In Europe
+            </span>
+            <span class="vid-details">Audrey Coyne</span>
+            <span class="vid-details">3,432,133 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-15.jfif" alt="#" />
+            <span class="vid-duration">9:47</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              Your First GitHub Pull Request (in 10 Mins)
+            </span>
+            <span class="vid-details">Jackson Bates</span>
+            <span class="vid-details">31,930 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-16.jfif" alt="#" />
+            <span class="vid-duration">11:35</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              Top signs of an inexperienced programmer
+            </span>
+            <span class="vid-details">TechLead</span>
+            <span class="vid-details">928,523 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-17.jfif" alt="#" />
+            <span class="vid-duration">11:06</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              Why I left my job at Google (as a software engineer)
+            </span>
+            <span class="vid-details">TechLead</span>
+            <span class="vid-details">1,684,582 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-18.jfif" alt="#" />
+            <span class="vid-duration">19:32</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              Max Stoiber - I want you to contribute to open source
+            </span>
+            <span class="vid-details">ReactRally</span>
+            <span class="vid-details">3,134 views</span>
+          </div>
+        </div>
+        <div class="vid-container">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-19.jfif" alt="#" />
+            <span class="vid-duration">23:20</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              How to Learn Anything... Fast - Josh Kaufman
+            </span>
+            <span class="vid-details">The RSA</span>
+            <span class="vid-details">3,157,647 views</span>
+          </div>
+        </div>
+        <div class="vid-container" id="vid-20">
+          <div class="vid-img">
+            <img src="/images/videos_thumbnails/vid-20.jfif" alt="#" />
+            <span class="vid-duration">5:59</span>
+          </div>
+          <div class="vid-description">
+            <span class="vid-title">
+              Git & GitHub: Pull requests (10/11)
+            </span>
+            <span class="vid-details">Codecourse</span>
+            <span class="vid-details">78,624 views</span>
+          </div>
+        </div>
+        <span id="show_more">SHOW MORE</span>
+      </div>
+       <!--End of column2-->
+    </div>
+   <!--End of container-->
+    <!--Footer section-->
+    <div id="footer">
+      <div id="footer-btns">
+        <div class="logo-icon" id="footer-logo">
+          <img src="images/logo-youtube.png" />
+        </div>
+        <div id="language-btn" aria-placeholder="Language:English">
+          <select id="">
+            <option value="1">
+              <img src="images/peopleasking.png" />Language:Engilish</option
+            >
+            <option value="2">
+              <img src="images/peopleasking.png" />Language:Spanish</option
+            >
+            <option value="3">
+              <img src="images/peopleasking.png" />Language:French</option
+            >
+          </select>
+        </div>
+
+        <div id="location-btn">
+          <select id="">
+            <option value="1">Location:Netherlands</option>
+            <option value="2">Location:America</option>
+            <option value="3">Location:Canada</option>
+          </select>
+        </div>
+        <div id="restricted-btn">
+          <select id="">
+            <option value="1">Restricted Mode:OFF</option>
+            <option value="2">Restricted Mode:ON</option>
+          </select>
+        </div>
+        <div id="help-btn">
+          <button type="button">
+            <img
+              style="opacity: 0.5; margin-right: 5px;"
+              src="images/question.png"
+            />Help
+          </button>
+        </div>
+        <div id="history-btn">
+          <button type="button">
+            <img
+              style="opacity: 0.5; margin-right: 5px;"
+              src="images/history.png"
+            />History
+          </button>
+        </div>
+      </div>
+      <div class="addtional-info">
+        <div><a href="#">About</a></div>
+        <div><a href="#">Press</a></div>
+        <div><a href="#">Copyright</a></div>
+        <div><a href="#">Creators</a></div>
+        <div><a href="#">Advertise</a></div>
+        <div><a href="#">Developers</a></div>
+      </div>
+      <div id="lowerlinks">
+        <div><a href="#">Terms</a></div>
+        <div><a href="#">Privacy</a></div>
+        <div><a href="#">policy & saftey</a></div>
+        <div><a href="#">Test new features</a></div>
+      </div>
+    </div>
+    <!--End of footer-->
+  </body>
+</html>
