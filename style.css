@@ -68,7 +68,7 @@ body {
   font-weight: 900;
   padding: 50px, 50px, 50px, 50px;
 }
-#choose {
+.choose {
   display: inline-block;
   margin-left: 20px;
 }
@@ -248,7 +248,7 @@ body {
   display: inline-block;
 }
 
-#subscribe {
+.subscribe {
   grid-area: subscribe;
   display: grid;
   grid-template-areas:
@@ -324,13 +324,13 @@ body {
   margin-right: 10px;
   vertical-align: middle;
 }
-#description {
+.description {
   background-color: white;
   margin-top: 15px;
   padding: 20px;
 }
 
-#comments {
+.comments {
   background-color: white;
   margin-top: 15px;
   padding: 30px;
@@ -341,11 +341,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-#comments img {
+.comments img {
   opacity: 0.5;
   margin-right: 10px;
 }
-#showbtn {
+.showbtn {
   width: 100%;
   height: 30px;
   border: none;
@@ -526,7 +526,7 @@ input:checked + .slider:before {
   background-color: white;
   padding-left: 3%;
 }
-#footer-btns {
+.footer-btns {
   width: 60%;
   box-sizing: border-box;
   display: grid;
@@ -555,14 +555,16 @@ input:checked + .slider:before {
   grid-area: help;
   margin-top: 20px;
   min-width: 80px;
+  opacity: 0.5; 
+  margin-right: 5px;
 }
-#footer-btns button {
+.footer-btns button {
   background-color: #f8f8f8;
   border: 1px solid rgba(128, 128, 128, 0.5);
   height: 28px;
   width: 80px;
 }
-#footer-btns select {
+.footer-btns select {
   background-color: #f8f8f8;
   border: 1px solid rgba(128, 128, 128, 0.5);
   height: 28px;
@@ -572,6 +574,8 @@ input:checked + .slider:before {
   grid-area: history;
   margin-top: 20px;
   min-width: 100px;
+  opacity: 0.5;
+   margin-right: 5px;
 }
 .addtional-info {
   width: 30%;
@@ -591,7 +595,7 @@ input:checked + .slider:before {
   color: rgb(102, 93, 93);
   font-weight: bolder;
 }
-#lowerlinks {
+.lowerlinks {
   width: 25%;
   box-sizing: border-box;
   height: auto;
@@ -600,7 +604,7 @@ input:checked + .slider:before {
   grid-template-columns: 1fr 1fr 2fr 3fr;
   grid-gap: 10px;
 }
-#lowerlinks a {
+.lowerlinks a {
   text-decoration: none;
   color: #5a5a53;
   font-size: 12px;
