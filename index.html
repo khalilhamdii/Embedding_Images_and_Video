@@ -7,40 +7,42 @@
   </head>
   <body>
     <!--The Nav Bar-->
-    <nav id="navbar">
-      <div id="box1">
-        <a href="#" class="list-icon"
+    <nav id="navbar" class="flex">
+      <div class="box1 flex">
+        <a href="#" class="list-icon nav-icons"
           ><img src="images/icon-list.png" alt="#"
         /></a>
 
-        <a href="#" class="logo-icon"
+        <a href="#" class="logo-icon nav-icons"
           ><img src="images/logo-youtube.png" alt="#"
         /></a>
       </div>
-      <div id="box2">
+      <div class="box2">
         <input type="text" placeholder="Search" class="searchbar" />
 
-        <a href="#" class="loop-icon"><img src="images/loop.png" alt="#" /></a>
+        <a href="#" class="loop-icon nav-icons"
+          ><img src="images/loop.png" alt="#"
+        /></a>
       </div>
-      <div id="box3">
-        <a href="#" class="upload-icon"
+      <div class="box3 flex">
+        <a href="#" class="upload-icon nav-icons"
           ><img src="images/upload-icon.png" alt="#"
         /></a>
         <button type="button" class="signbutton">Sign In</button>
       </div>
     </nav>
     <!--language bar-->
-    <div id="langbar">
+    <section id="langbar" class="flex">
       <div class="choose">
-        <p>
+        <span>
           <img src="images/chooseicon.jpg" />
           Choose your language.
-        </p>
+        </span>
       </div>
-      <div><p>X</p></div>
-    </div>
+      <div><span>X</span></div>
+    </section>
     <!--Prefered language-->
-    <div id="preflang">
+    <section id="preflang" class="flex">
       <div id="viewYt">
         <p>
           You're viewing YouTube in English (US). You can
@@ -50,12 +52,11 @@
       <div id="lmlang">
         <p><a href="#">Learn More</a></p>
       </div>
-    </div>
-
+    </section>
     <!--container-->
     <main id="container">
-      <section id="col1">
-        <div id="section-1">
+      <aside id="col1">
+        <section id="section-1">
           <iframe
             width="100%"
             height="400px"
@@ -64,15 +65,17 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-        </div>
+        </section>
 
         <!--section 2-->
-        <div id="section-2">
+        <section id="section-2">
           <div id="title">
             <span>Contributing to Open Source Part I: The Easy Way</span>
           </div>
           <div class="subscribe">
-            <div id="channellogo"><img src="images/t-logo.jpg" alt="logo"/></div>
+            <div id="channellogo">
+              <img src="images/t-logo.jpg" alt="logo" />
+            </div>
             <div id="channelname"><span>The Odin Project</span></div>
             <div id="subbtn-container">
               <img src="images/subbutton.png" alt="#" />
@@ -83,15 +86,21 @@
             5,016 Views
           </div>
           <div id="sharebtns">
-            <div id="addto"><img src="images/plus-icon.png" />Add to</div>
-            <div id="share"><img src="images/share-icon.png" />Share</div>
-            <div id="more"><img src="images/more-icon.png" />More</div>
+            <div id="addto" class="flex">
+              <img src="images/plus-icon.png" />Add to
+            </div>
+            <div id="share" class="flex">
+              <img src="images/share-icon.png" />Share
+            </div>
+            <div id="more" class="flex">
+              <img src="images/more-icon.png" />More
+            </div>
           </div>
           <div id="likebtns">
             <div id="like"><img src="images/betterlike.png" />351</div>
             <div id="dislike"><img src="images/betterdislike.png" />1</div>
           </div>
-        </div>
+        </section>
 
         <!--description-->
         <summary class="description">
@@ -114,19 +123,21 @@
           <button class="showbtn" type="button">SHOW MORE</button>
         </div>
         <!--Comments section -->
-        <div class="comments">
+        <section class="comments flex">
           <img src="images/loading.gif" />
           <span>Loading...</span>
-        </div>
-      </section>
+        </section>
+      </aside>
       <!--end column 1-->
-<!--column 2-->
-      <section id="col2">
+      <!--column 2-->
+      <aside id="col2" class="flex">
         <div class="opt">
           <span id="left-side">Up next</span>
-          <div id="right-side">
+          <div id="right-side" class="flex">
             <span id="tag-1">Autoplay</span>
-            <span id="tag-2"><img src="images/i-icon.png" alt="Autoplay" /></span>
+            <span id="tag-2"
+              ><img src="images/i-icon.png" alt="Autoplay"
+            /></span>
             <label class="switch">
               <input type="checkbox" />
               <span class="slider round"></span>
@@ -135,7 +146,10 @@
         </div>
         <div class="vid-container" id="vid-1">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-1.jfif" alt="  Contributing to Open Source Part II: The Real Way" />
+            <img
+              src="images/videos_thumbnails/vid-1.jfif"
+              alt="  Contributing to Open Source Part II: The Real Way"
+            />
             <span class="vid-duration">14:25</span>
           </div>
           <div class="vid-description">
@@ -148,8 +162,11 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-2.jfif" alt="'How to Get a Job at the Big 4 - Amazon, Facebook, Google &
-            Microsoft' by" />
+            <img
+              src="images/videos_thumbnails/vid-2.jfif"
+              alt="'How to Get a Job at the Big 4 - Amazon, Facebook, Google &
+            Microsoft' by"
+            />
             <span class="vid-duration">42:35</span>
           </div>
           <div class="vid-description">
@@ -163,7 +180,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-3.jfif" alt=" Programming in Visual Basic .Net How to Connect Access Database to" />
+            <img
+              src="images/videos_thumbnails/vid-3.jfif"
+              alt=" Programming in Visual Basic .Net How to Connect Access Database to"
+            />
             <span class="vid-duration">19:11</span>
           </div>
           <div class="vid-description">
@@ -176,7 +196,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-4.jfif" alt="REST API concepts and examples" />
+            <img
+              src="images/videos_thumbnails/vid-4.jfif"
+              alt="REST API concepts and examples"
+            />
             <span class="vid-duration">8:53</span>
           </div>
           <div class="vid-description">
@@ -189,8 +212,11 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-5.jfif" alt="GitHub - Why Microsoft Paid $7.5B for the Future of Software! - A
-            Case" />
+            <img
+              src="images/videos_thumbnails/vid-5.jfif"
+              alt="GitHub - Why Microsoft Paid $7.5B for the Future of Software! - A
+            Case"
+            />
             <span class="vid-duration">17:41</span>
           </div>
           <div class="vid-description">
@@ -204,8 +230,11 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-6.jfif" alt=" How to create a 3D Terrain with Google Maps and height maps in
-            Photoshop" />
+            <img
+              src="images/videos_thumbnails/vid-6.jfif"
+              alt=" How to create a 3D Terrain with Google Maps and height maps in
+            Photoshop"
+            />
             <span class="vid-duration">20:32</span>
           </div>
           <div class="vid-description">
@@ -219,7 +248,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-7.jfif" alt="  Convolutional Neural Networks (CNNs) explained" />
+            <img
+              src="images/videos_thumbnails/vid-7.jfif"
+              alt="  Convolutional Neural Networks (CNNs) explained"
+            />
             <span class="vid-duration">8:37</span>
           </div>
           <div class="vid-description">
@@ -232,7 +264,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-8.jfif" alt="Top 10 Linux Job Interview Questions" />
+            <img
+              src="images/videos_thumbnails/vid-8.jfif"
+              alt="Top 10 Linux Job Interview Questions"
+            />
             <span class="vid-duration">16:04</span>
           </div>
           <div class="vid-description">
@@ -245,7 +280,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-9.jfif" alt="   Running an SQL Injection Attack - Computerphile" />
+            <img
+              src="images/videos_thumbnails/vid-9.jfif"
+              alt="   Running an SQL Injection Attack - Computerphile"
+            />
             <span class="vid-duration">17:11</span>
           </div>
           <div class="vid-description">
@@ -258,7 +296,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-10.jfif" alt=" How to prepare for product based companies??" />
+            <img
+              src="images/videos_thumbnails/vid-10.jfif"
+              alt=" How to prepare for product based companies??"
+            />
             <span class="vid-duration">26:01</span>
           </div>
           <div class="vid-description">
@@ -271,7 +312,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-11.jfif" alt="   Visual Basic .Net : Search in Access Database" />
+            <img
+              src="images/videos_thumbnails/vid-11.jfif"
+              alt="   Visual Basic .Net : Search in Access Database"
+            />
             <span class="vid-duration">25:01</span>
           </div>
           <div class="vid-description">
@@ -284,7 +328,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-12.jfif" alt="  How To Convert pdf to word without software" />
+            <img
+              src="images/videos_thumbnails/vid-12.jfif"
+              alt="  How To Convert pdf to word without software"
+            />
             <span class="vid-duration">9:04</span>
           </div>
           <div class="vid-description">
@@ -297,7 +344,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-13.jfif" alt="   What Python Projects Should I Build to Get a Job?" />
+            <img
+              src="images/videos_thumbnails/vid-13.jfif"
+              alt="   What Python Projects Should I Build to Get a Job?"
+            />
             <span class="vid-duration">12:19</span>
           </div>
           <div class="vid-description">
@@ -310,7 +360,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-14.jfif" alt="How To NOT Look Like A Tourist | What To Wear In Europe" />
+            <img
+              src="images/videos_thumbnails/vid-14.jfif"
+              alt="How To NOT Look Like A Tourist | What To Wear In Europe"
+            />
             <span class="vid-duration">8:19</span>
           </div>
           <div class="vid-description">
@@ -323,7 +376,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-15.jfif" alt="  Your First GitHub Pull Request" />
+            <img
+              src="images/videos_thumbnails/vid-15.jfif"
+              alt="  Your First GitHub Pull Request"
+            />
             <span class="vid-duration">9:47</span>
           </div>
           <div class="vid-description">
@@ -336,7 +392,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-16.jfif" alt=" Top signs of an inexperienced programmer" />
+            <img
+              src="images/videos_thumbnails/vid-16.jfif"
+              alt=" Top signs of an inexperienced programmer"
+            />
             <span class="vid-duration">11:35</span>
           </div>
           <div class="vid-description">
@@ -349,7 +408,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-17.jfif" alt="Why I left my job at Google" />
+            <img
+              src="images/videos_thumbnails/vid-17.jfif"
+              alt="Why I left my job at Google"
+            />
             <span class="vid-duration">11:06</span>
           </div>
           <div class="vid-description">
@@ -362,7 +424,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-18.jfif" alt="Max Stoiber " />
+            <img
+              src="images/videos_thumbnails/vid-18.jfif"
+              alt="Max Stoiber "
+            />
             <span class="vid-duration">19:32</span>
           </div>
           <div class="vid-description">
@@ -375,7 +440,10 @@
         </div>
         <div class="vid-container">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-19.jfif" alt="How to Learn Anything" />
+            <img
+              src="images/videos_thumbnails/vid-19.jfif"
+              alt="How to Learn Anything"
+            />
             <span class="vid-duration">23:20</span>
           </div>
           <div class="vid-description">
@@ -388,7 +456,10 @@
         </div>
         <div class="vid-container" id="vid-20">
           <div class="vid-img">
-            <img src="images/videos_thumbnails/vid-20.jfif" alt=" Git & GitHub:" />
+            <img
+              src="images/videos_thumbnails/vid-20.jfif"
+              alt=" Git & GitHub:"
+            />
             <span class="vid-duration">5:59</span>
           </div>
           <div class="vid-description">
@@ -400,10 +471,10 @@
           </div>
         </div>
         <span id="show_more">SHOW MORE</span>
-      </section>
-       <!--End of column2-->
+      </aside>
+      <!--End of column2-->
     </main>
-   <!--End of container-->
+    <!--End of container-->
     <!--Footer section-->
     <footer id="footer">
       <div class="footer-btns">
@@ -438,19 +509,10 @@
           </select>
         </div>
         <div id="help-btn">
-          <button type="button">
-            <img
-    src="images/question.png"
-            />Help
-          </button>
+          <button type="button"><img src="images/question.png" />Help</button>
         </div>
         <div id="history-btn">
-          <button type="button">
-            <img
-            
-              src="images/history.png"
-            />History
-          </button>
+          <button type="button"><img src="images/history.png" />History</button>
         </div>
       </div>
       <div class="addtional-info">

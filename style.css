@@ -9,6 +9,9 @@ body {
   font-family: "YouTube Noto", Roboto, arial, sans-serif;
   font-size: 13px;
 }
+.flex {
+  display: flex;
+}
 /* CSS Code of the navigation bar starts here */
 /* ====> */
 #navbar {
@@ -17,38 +20,33 @@ body {
   top: 0;
   width: auto;
   position: relative;
-  display: flex;
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
   align-items: center;
 }
 /* Styling of the icons inside the navbar*/
-.list-icon img {
-  height: 15px;
+.nav-icons {
   width: auto;
   margin-top: 5px;
+}
+.list-icon img {
+  height: 15px;
   opacity: 0.8;
 }
 .logo-icon img {
   height: 55px;
-  width: auto;
-  margin-top: 5px;
   margin-left: 10px;
 }
 .loop-icon img {
   height: 30px;
-  width: auto;
   margin-right: 15px;
-  margin-top: 5px;
   height: 20px;
   position: absolute;
   right: 0px;
 }
 .upload-icon img {
   height: 20px;
-  width: auto;
-  margin-top: 5px;
   opacity: 0.8;
   margin-right: 50px;
 }
@@ -60,7 +58,6 @@ body {
   border: none;
 }
 #langbar {
-  display: flex;
   justify-content: space-between;
   background-color: #167ac6;
   color: white;
@@ -74,7 +71,6 @@ body {
 }
 
 #preflang {
-  display: flex;
   justify-content: space-between;
   background-color: white;
   border-color: #167ac6;
@@ -91,14 +87,14 @@ body {
 }
 
 /* box1 of the navbar contains Youtube logo and the list icon*/
-#box1 {
+.box1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 20px;
 }
 /* box2 of the navbar contains the search bar and the loop icon*/
-#box2 {
+.box2 {
   height: 30px;
   width: 600px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -109,8 +105,7 @@ body {
   margin-right: 20px;
 }
 /* box3 of the navbar contains the Sign In button  and the upload icon*/
-#box3 {
-  display: flex;
+.box3 {
   justify-content: space-between;
   align-items: center;
   margin-left: 10px;
@@ -201,22 +196,16 @@ body {
 }
 #addto {
   grid-area: addto;
-
-  display: flex;
   align-items: center;
   justify-content: left;
 }
 #share {
   grid-area: share;
-
-  display: flex;
   align-items: center;
   justify-content: left;
 }
 #more {
   grid-area: more;
-
-  display: flex;
   align-items: center;
   justify-content: left;
 }
@@ -337,7 +326,6 @@ body {
   color: rgb(118, 118, 118);
   font-weight: bold;
   font-size: 12px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -360,7 +348,6 @@ body {
 #col2 {
   flex: 2;
   background-color: white;
-  display: flex;
   flex-direction: column;
   height: auto;
   flex-wrap: nowrap;
@@ -498,7 +485,6 @@ input:checked + .slider:before {
 }
 #right-side {
   grid-area: right_side;
-  display: flex;
   justify-content: flex-end;
   gap: 15px;
 }
@@ -511,7 +497,6 @@ input:checked + .slider:before {
   height: 20px;
   width: auto;
 }
-
 
 /*end of col2*/
 /* CSS code for the footer section */
@@ -555,7 +540,7 @@ input:checked + .slider:before {
   grid-area: help;
   margin-top: 20px;
   min-width: 80px;
-  opacity: 0.5; 
+  opacity: 0.5;
   margin-right: 5px;
 }
 .footer-btns button {
@@ -575,7 +560,7 @@ input:checked + .slider:before {
   margin-top: 20px;
   min-width: 100px;
   opacity: 0.5;
-   margin-right: 5px;
+  margin-right: 5px;
 }
 .addtional-info {
   width: 30%;
