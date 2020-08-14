@@ -12,7 +12,9 @@ body {
 .flex {
   display: flex;
 }
+
 /* CSS Code of the navigation bar starts here */
+
 /* ====> */
 #navbar {
   background-color: white;
@@ -25,7 +27,8 @@ body {
   padding-right: 50px;
   align-items: center;
 }
-/* Styling of the icons inside the navbar*/
+
+ /* Styling of the icons inside the navbar */
 .nav-icons {
   width: auto;
   height: 20px;
@@ -48,6 +51,7 @@ body {
   right: 0px;
   top: 5px;
 }
+
 /* Styling of the searchbar */
 .searchbar {
   width: 90%;
@@ -86,14 +90,15 @@ body {
   text-decoration: none;
 }
 
-/* box1 of the navbar contains Youtube logo and the list icon*/
+/*  box1 of the navbar contains Youtube logo and the list icon */
 .box1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 20px;
 }
-/* box2 of the navbar contains the search bar and the loop icon*/
+ 
+ /* box2 of the navbar contains the search bar and the loop icon */
 .box2 {
   height: 30px;
   width: 600px;
@@ -104,7 +109,8 @@ body {
   min-width: 450px;
   margin-right: 20px;
 }
-/* box3 of the navbar contains the Sign In button  and the upload icon*/
+
+/* box3 of the navbar contains the Sign In button  and the upload icon */
 .box3 {
   justify-content: space-between;
   align-items: center;
@@ -121,8 +127,11 @@ body {
   border: none;
   border-radius: 2px;
 }
+
 /* <==== */
+
 /* CSS Code of the navigation bar ends here */
+
 /* container holds the two columns col and col2 */
 #container {
   width: auto;
@@ -136,15 +145,18 @@ body {
   min-height: 100%;
   margin-bottom: 10px;
 }
-/*where the video, comments and description is*/
+
+/* where the video, comments and description is */
 #col1 {
   flex: 1;
   margin-right: 15px;
   justify-content: center;
   min-width: 450px;
 }
-/*end of col1*/
-/*suggested videos*/
+
+/* end of col1 */
+
+/* suggested videos */
 
 #section-2 {
   display: grid;
@@ -343,8 +355,11 @@ body {
   font-weight: bold;
   font-size: 10px;
 }
-/*end of col1*/
-/*The second column( suggested videos) */
+
+/* end of col1 */
+
+/* The second column( suggested videos) */
+
 #col2 {
   flex: 2;
   background-color: white;
@@ -405,8 +420,11 @@ body {
   font-size: 12px;
   padding: 3px;
 }
-/* Toggle switch CSS code starts here */
+
+/*  Toggle switch CSS code starts here  */
+
 /* The switch - the box around the slider */
+
 .switch {
   position: relative;
   display: inline-block;
@@ -469,6 +487,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
 /* Toggle switch CSS code ends here */
 
 .opt {
@@ -498,7 +517,8 @@ input:checked + .slider:before {
   width: auto;
 }
 
-/*end of col2*/
+/* end of col2 */
+
 /* CSS code for the footer section */
 #footer {
   box-sizing: border-box;
@@ -594,4 +614,5 @@ input:checked + .slider:before {
   color: #5a5a53;
   font-size: 12px;
 }
+
 /* CSS code for the footer section ends here */
